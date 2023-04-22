@@ -1,0 +1,12 @@
+#+TITLE: CAMRON THEME README
+#+LANGUAGE: en
+*WIP*
+
+
+A dark purple theme for Emacs.
+
+** Installation
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path "<path to camron-theme.el>")
+(load-theme 'camron t)
+#+END_SRC

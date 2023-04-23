@@ -70,13 +70,15 @@
      (warning      (:foreground yellow1))
      (error        (:foreground red2 :bold t))
      (highlight    (:background base7))
-     (match        (:background pink3 :foreground base1))
+     (match        (:background purple3 :foreground base1))
 
 
      ;;; Whitespaces
-
-     ; TODO
-     (tailing-whitespace    (:background red2))
+     (trailing-whitespace    (:background red2))
+     (whitespace-trailing    (:background red2))
+     (whitespace-tab         (:background "unspecified-bg" :foreground base5))
+     (whitespace-space       (:background "unspecified-bg" :foreground base5))
+     (whitespace-newline     (:background "unspecified-bg" :foreground base5))
 
 
      ;;; paren
@@ -120,11 +122,9 @@
 
 
      ;;; isearch
-     (isearch                (:background yellow1 :foreground base1 :weight 'bold))
+     (isearch                (:background purple3 :foreground base1 :weight 'bold))
      (isearch-fail           (:background red1 :foreground base1))
      (lazy-highlight         (:background base5))
-     (trailing-whitespace    (:background base5))
-
 
      ;;; Auto complete
      (ac-candidate-face    (:background base5 :foreground base2))
@@ -176,7 +176,6 @@
 
      ;; eshell
      (eshell-prompt    (:foreground red2 :weight 'bold))
-
 
      ;;; Org mode
      (org-block               (:background base5))

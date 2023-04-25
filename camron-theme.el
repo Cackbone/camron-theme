@@ -31,6 +31,7 @@
     ,palette
     (
      ;;; Basic UI
+
      (default              (:background base6 :foreground base1))
      (cursor               (:background purple3))
      (fringe               (:background base6))
@@ -76,9 +77,9 @@
      ;;; Whitespaces
      (trailing-whitespace    (:background red2))
      (whitespace-trailing    (:background red2))
-     (whitespace-tab         (:background "unspecified-bg" :foreground base5))
-     (whitespace-space       (:background "unspecified-bg" :foreground base5))
-     (whitespace-newline     (:background "unspecified-bg" :foreground base5))
+     (whitespace-tab         (:foreground base5))
+     (whitespace-space       (:foreground base5))
+     (whitespace-newline     (:foreground base5))
 
 
      ;;; paren
@@ -90,10 +91,11 @@
 
 
      ;;; Line numbers
-
-     ; TODO
-     (linum                   (:background "unspecified-bg" :foreground base3))
-     (linum-highlight-face    (:inverse-video nil :background base3))
+     (line-number                 (:background "unspecified-bg" :foreground base3))
+     (line-number-current-line    (:background "unspecified-bg" :foreground base2))
+     (linum                       (:background "unspecified-bg" :foreground base3))
+     (linum-highlight-face        (:inverse-video nil :background base2))
+     (linum-relative-current-face (:background "unspecified-bg" :foreground base2))
 
 
      ;;; Diff
@@ -178,9 +180,9 @@
      (eshell-prompt    (:foreground red2 :weight 'bold))
 
      ;;; Org mode
-     (org-block               (:background base5))
-     (org-block-begin-line    (:background base5 :foreground base3))
-     (org-block-end-line      (:background base5 :foreground base3))
+     (org-block               (:background base7))
+     (org-block-begin-line    (:background base4 :foreground base2))
+     (org-block-end-line      (:background base4 :foreground base2))
      (org-date                (:foreground green1 :underline t))
      (org-footnote            (:foreground green1 :slant 'italic :underline t))
      (org-hide                (:foreground base5))

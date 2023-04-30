@@ -53,6 +53,8 @@
      (font-lock-builtin-face                 (:foreground pink3 :weight 'bold))
      (font-lock-comment-face                 (:foreground base3))
      (font-lock-comment-delimiter-face       (:foreground base3))
+     (font-lock-doc-face                 (:foreground base3))
+     (font-lock-doc-delimiter-face       (:foreground base3))
      (font-lock-constant-face                (:foreground green1 :weight 'bold))
      (font-lock-function-name-face           (:foreground pink2))
      (font-lock-keyword-face                 (:foreground purple1))
@@ -147,9 +149,15 @@
      (company-preview-common                   (:background base5 :foreground pink3))
 
      ;;; Flycheck
-     (flycheck-error      (:underline (:style 'wave :color red1)))
-     (flycheck-warning    (:underline (:style 'wave :color yellow1)))
-     (flycheck-info       (:underline (:style 'wave :color blue1)))
+     (flycheck-error                 (:underline (:style 'wave :color red1)))
+     (flycheck-warning               (:underline (:style 'wave :color yellow1)))
+     (flycheck-info                  (:underline (:style 'wave :color blue1)))
+     (flycheck-fringe-error          (:foreground red1))
+     (flycheck-fringe-warning        (:foreground yellow1))
+     (flycheck-fringe-info           (:foreground blue1))
+     (flycheck-error-list-error      (:foreground red1))
+     (flycheck-error-list-warning    (:foreground yellow1))
+     (flycheck-error-list-info       (:foreground blue1))
 
 
      ;;; lsp-ui
@@ -159,10 +167,12 @@
      (lsp-headerline-breadcrumb-path-error-face         (:underline (:style 'wave :color red1)))
      (lsp-headerline-breadcrumb-path-warning-face       (:underline (:style 'wave :color yellow1)))
      (lsp-headerline-breadcrumb-path-info-face          (:underline (:style 'wave :color blue1)))
+     (lsp-headerline-breadcrumb-path-hint-face          (:underline (:style 'wave :color blue1)))
      (lsp-headerline-breadcrumb-symbols-face            (:foreground pink3))
      (lsp-headerline-breadcrumb-symbols-error-face      (:underline (:style 'wave :color red1)))
      (lsp-headerline-breadcrumb-symbols-warning-face    (:underline (:style 'wave :color yellow1)))
      (lsp-headerline-breadcrumb-symbols-info-face       (:underline (:style 'wave :color blue1)))
+     (lsp-headerline-breadcrumb-symbols-hint-face       (:underline (:style 'wave :color blue1)))
 
 
      ;;; Term
@@ -178,6 +188,28 @@
 
      ;; eshell
      (eshell-prompt    (:foreground red2 :weight 'bold))
+
+     ;;; JS2
+     ;; messages
+     (js2-warning                  (:underline (:color yellow1 :style 'wave)))
+     (js2-error                    (:underline (:color red2 :style 'wave)))
+     (js2-external-variable        (:underline (:color base1 :style 'line)))
+     ;; language
+     (js2-function-param           (:background nil :foreground pink1))
+     (js2-function-call            (:background nil :foreground pink2))
+     (js2-private-function-call    (:background nil :foreground pink2))
+     (js2-instance-member          (:background nil :foreground base1))
+     (js2-private-member           (:background nil :foreground base1))
+     ;; jsdoc
+     (js2-jsdoc-tag                (:background nil :foreground purple1))
+     (js2-jsdoc-type               (:background nil :foreground base2))
+     (js2-jsdoc-value              (:background nil :foreground pink1))
+
+
+     ;;; Typescript
+     (typescript-jsdoc-tag      (:background nil :foreground purple1))
+     (typescript-jsdoc-type     (:background nil :foreground base2))
+     (typescript-jsdoc-value    (:background nil :foreground pink1))
 
      ;;; Org mode
      (org-block               (:background base7))
@@ -201,8 +233,7 @@
      (org-target              (:foreground base2 :underline t :weight 'bold))
      (org-table               (:foreground base2))
      (org-todo                (:foreground red1 :weight 'bold)))
-
-     ,@body))
+    ,@body))
 
 
 

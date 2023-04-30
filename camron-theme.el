@@ -53,8 +53,8 @@
      (font-lock-builtin-face                 (:foreground pink3 :weight 'bold))
      (font-lock-comment-face                 (:foreground base3))
      (font-lock-comment-delimiter-face       (:foreground base3))
-     (font-lock-doc-face                 (:foreground base3))
-     (font-lock-doc-delimiter-face       (:foreground base3))
+     (font-lock-doc-face                     (:foreground base3))
+     (font-lock-doc-delimiter-face           (:foreground base3))
      (font-lock-constant-face                (:foreground green1 :weight 'bold))
      (font-lock-function-name-face           (:foreground pink2))
      (font-lock-keyword-face                 (:foreground purple1))
@@ -93,11 +93,11 @@
 
 
      ;;; Line numbers
-     (line-number                 (:background "unspecified-bg" :foreground base3))
-     (line-number-current-line    (:background "unspecified-bg" :foreground base2))
-     (linum                       (:background "unspecified-bg" :foreground base3))
-     (linum-highlight-face        (:inverse-video nil :background base2))
-     (linum-relative-current-face (:background "unspecified-bg" :foreground base2))
+     (line-number                    (:background "unspecified-bg" :foreground base3))
+     (line-number-current-line       (:background "unspecified-bg" :foreground base2))
+     (linum                          (:background "unspecified-bg" :foreground base3))
+     (linum-highlight-face           (:inverse-video nil :background base2))
+     (linum-relative-current-face    (:background "unspecified-bg" :foreground base2))
 
 
      ;;; Diff

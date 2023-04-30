@@ -10,3 +10,31 @@ A dark purple theme for Emacs.
 (add-to-list 'custom-theme-load-path "<path to camron-theme.el>")
 (load-theme 'camron t)
 #+END_SRC
+
+
+** Examples
+
+*** Typescript
+
+#+CAPTION: LSP error
+[[./screenshots/typescript-demo.png]]
+
+
+#+CAPTION: Autocomplete popup
+[[./screenshots/typescript-demo2.png]]
+
+
+#+CAPTION: On hover type definition popup
+[[./screenshots/typescript-demo3.png]]
+
+
+*** Emacs Lisp
+
+#+CAPTION: Camron theme source code
+[[./screenshots/elisp-demo.png]]
+
+
+*** Org mode
+
+#+CAPTION: Splitted buffers with org mode
+[[./screenshots/org-demo.png]]

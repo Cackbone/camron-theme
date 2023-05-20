@@ -1,7 +1,7 @@
 ;;; camron-theme.el --- Camron Theme
 
 ;; Author: Cédric Legendre <contact@cackbone.fr>
-;; Package-Version: 1.0
+;; Package-Version: 1.0.1
 
 ;; Package-Requires: ((autothemer "0.2"))
 
@@ -32,20 +32,20 @@
     (
      ;;; Basic UI
 
-     (default              (:background base6 :foreground base1))
+     (default              (:background base7 :foreground base1))
      (cursor               (:background purple3))
-     (fringe               (:background base6))
-     (hl-line              (:background base7))
-     (region               (:background base5))
+     (fringe               (:background base7))
+     (hl-line              (:background base8))
+     (region               (:background base6))
      (minibuffer-prompt    (:foreground pink3))
-     (border               (:background base6))
-     (vertical-border      (:foreground base4))
-     (internal-border      (:foreground base4))
-     (window-divider       (:foreground base4))
+     (border               (:background base7))
+     (vertical-border      (:foreground base5))
+     (internal-border      (:foreground base5))
+     (window-divider       (:foreground base5))
      (link                 (:weight 'normal :underline t :foreground pink3))
      (link-visited         (:weight 'normal :underline t :foreground pink3))
-     (shadow               (:foreground base3))
-     (header-line          (:background base7 :foreground base2))
+     (shadow               (:foreground base4))
+     (header-line          (:background base8 :foreground base2))
 
 
      ;;; Syntax
@@ -72,30 +72,30 @@
      (success      (:foreground green1))
      (warning      (:foreground yellow1))
      (error        (:foreground red2 :bold t))
-     (highlight    (:background base7))
+     (highlight    (:background base8))
      (match        (:background purple3 :foreground base1))
 
 
      ;;; Whitespaces
      (trailing-whitespace    (:background red2))
      (whitespace-trailing    (:background red2))
-     (whitespace-tab         (:foreground base5))
-     (whitespace-space       (:foreground base5))
-     (whitespace-newline     (:foreground base5))
+     (whitespace-tab         (:foreground base6))
+     (whitespace-space       (:foreground base6))
+     (whitespace-newline     (:foreground base6))
 
 
      ;;; paren
-     (show-paren-match       (:background base2 :foreground base6))
+     (show-paren-match       (:background base2 :foreground base7))
      (show-paren-mismatch    (:background red2))
-     (paren-face-match       (:background base2 :foreground base6))
+     (paren-face-match       (:background base2 :foreground base7))
      (paren-face-mismatch    (:background red2))
      (paren-face-no-match    (:background red2))
 
 
      ;;; Line numbers
-     (line-number                    (:background "unspecified-bg" :foreground base3))
+     (line-number                    (:background "unspecified-bg" :foreground base4))
      (line-number-current-line       (:background "unspecified-bg" :foreground base2))
-     (linum                          (:background "unspecified-bg" :foreground base3))
+     (linum                          (:background "unspecified-bg" :foreground base4))
      (linum-highlight-face           (:inverse-video nil :background base2))
      (linum-relative-current-face    (:background "unspecified-bg" :foreground base2))
 
@@ -113,40 +113,40 @@
      ;;; Popup
 
      ; TODO
-     (popup-tip-face (:background base5 :foreground base2))
+     (popup-tip-face (:background base6 :foreground base2))
 
 
      ;;; Powerline
-     (mode-line              (:background base7 :foreground base1))
-     (mode-line-inactive     (:foreground base2 :background base5 :box nil))
-     (powerline-active1      (:background base5 :foreground base2))
-     (powerline-active2      (:background base5 :foreground base2))
-     (powerline-inactive1    (:background base4 :foreground base2))
-     (powerline-inactive2    (:background base4 :foreground base2))
+     (mode-line              (:background base8 :foreground base1))
+     (mode-line-inactive     (:foreground base2 :background base6 :box nil))
+     (powerline-active1      (:background base6 :foreground base2))
+     (powerline-active2      (:background base6 :foreground base2))
+     (powerline-inactive1    (:background base5 :foreground base2))
+     (powerline-inactive2    (:background base5 :foreground base2))
 
 
      ;;; isearch
      (isearch                (:background purple3 :foreground base1 :weight 'bold))
      (isearch-fail           (:background red1 :foreground base1))
-     (lazy-highlight         (:background base5))
+     (lazy-highlight         (:background base6))
 
      ;;; Auto complete
-     (ac-candidate-face    (:background base5 :foreground base2))
-     (ac-selection-face    (:background base7 :foreground base1))
+     (ac-candidate-face    (:background base6 :foreground base2))
+     (ac-selection-face    (:background base8 :foreground base1))
 
      ;;; Company
 
-     (company-tooltip                          (:background base5 :foreground base2))
-     (company-tooltip-selection                (:background base7 :foreground base1))
-     (company-tooltip-annotation               (:background base5 :foreground base2))
-     (company-tooltip-annotation-selection     (:background base7 :foreground base1))
-     (company-tooltip-mouse                    (:background base4))
+     (company-tooltip                          (:background base6 :foreground base2))
+     (company-tooltip-selection                (:background base8 :foreground base1))
+     (company-tooltip-annotation               (:background base6 :foreground base2))
+     (company-tooltip-annotation-selection     (:background base8 :foreground base1))
+     (company-tooltip-mouse                    (:background base5))
      (company-tooltip-common                   (:foreground pink3))
      (company-tooltip-common-selection         (:foreground blue1))
-     (company-scrollbar-fg                     (:background base3))
-     (company-scrollbar-bg                     (:background base5))
-     (company-preview                          (:background base5))
-     (company-preview-common                   (:background base5 :foreground pink3))
+     (company-scrollbar-fg                     (:background base4))
+     (company-scrollbar-bg                     (:background base6))
+     (company-preview                          (:background base6))
+     (company-preview-common                   (:background base6 :foreground pink3))
 
      ;;; Flycheck
      (flycheck-error                 (:underline (:style 'wave :color red1)))
@@ -161,8 +161,8 @@
 
 
      ;;; lsp-ui
-     (lsp-ui-doc-background                             (:background base5))
-     (lsp-ui-doc-header                                 (:background base7))
+     (lsp-ui-doc-background                             (:background base6))
+     (lsp-ui-doc-header                                 (:background base8))
      (lsp-headerline-breadcrumb-path-face               (:foreground base2))
      (lsp-headerline-breadcrumb-path-error-face         (:underline (:style 'wave :color red1)))
      (lsp-headerline-breadcrumb-path-warning-face       (:underline (:style 'wave :color yellow1)))
@@ -212,27 +212,29 @@
      (typescript-jsdoc-value    (:background nil :foreground pink1))
 
      ;;; Org mode
-     (org-block               (:background base7))
-     (org-block-begin-line    (:background base4 :foreground base2))
-     (org-block-end-line      (:background base4 :foreground base2))
-     (org-date                (:foreground green1 :underline t))
-     (org-footnote            (:foreground green1 :slant 'italic :underline t))
-     (org-hide                (:foreground base5))
-     (org-level-1             (:weight 'bold :height 1.2 :foreground green1))
-     (org-level-2             (:weight 'bold :height 1.1 :foreground green1))
-     (org-level-3             (:weight 'bold :foreground pink3))
-     (org-level-4             (:weight 'bold :foreground base1))
-     (org-level-5             (:weight 'bold :foreground yellow1))
-     (org-level-6             (:weight 'bold :slant 'italic :foreground green1))
-     (org-level-7             (:weight 'bold :slant 'italic :foreground green1))
-     (org-level-8             (:weight 'bold :foreground pink3))
-     (org-level-9             (:weight 'bold :foreground base1))
-     (org-link                (:weight 'normal :underline t :foreground pink3))
-     (org-list-dt             (:weight 'bold :slant 'italic))
-     (org-special-keyword     (:foreground yellow1 :weight 'bold))
-     (org-target              (:foreground base2 :underline t :weight 'bold))
-     (org-table               (:foreground base2))
-     (org-todo                (:foreground red1 :weight 'bold)))
+     (org-block                    (:background base8))
+     (org-block-begin-line         (:background base5 :foreground base2))
+     (org-block-end-line           (:background base5 :foreground base2))
+     (org-date                     (:foreground green1 :underline t))
+     (org-footnote                 (:foreground green1 :slant 'italic :underline t))
+     (org-hide                     (:foreground base6))
+     (org-level-1                  (:weight 'bold :height 1.2 :foreground green1 :underline t))
+     (org-level-2                  (:weight 'bold :height 1.1 :foreground green1))
+     (org-level-3                  (:weight 'bold :foreground pink3))
+     (org-level-4                  (:weight 'bold :foreground base1))
+     (org-level-5                  (:weight 'bold :foreground yellow1))
+     (org-level-6                  (:weight 'bold :slant 'italic :foreground green1))
+     (org-level-7                  (:weight 'bold :slant 'italic :foreground green1))
+     (org-level-8                  (:weight 'bold :foreground pink3))
+     (org-level-9                  (:weight 'bold :foreground base1))
+     (org-link                     (:weight 'normal :underline t :foreground pink3))
+     (org-list-dt                  (:weight 'bold :slant 'italic))
+     (org-special-keyword          (:foreground yellow1 :weight 'bold))
+     (org-target                   (:foreground base2 :underline t :weight 'bold))
+     (org-table                    (:foreground base2))
+     (org-todo                     (:foreground red1 :weight 'bold))
+     (org-document-title           (:foreground base1 :weight 'bold :underline t))
+     (org-document-info-keyword    (:foreground base3)))
     ,@body))
 
 
@@ -244,11 +246,12 @@
  ((((class color) (min-colors 24))) ; 24bit GUI color
   (base1 "#ddcedc")
   (base2 "#b89eb6")
-  (base3 "#473047")
-  (base4 "#3b273b")
-  (base5 "#302030")
-  (base6 "#211621")
-  (base7 "#030203")
+  (base3 "#80677F")
+  (base4 "#473047")
+  (base5 "#3b273b")
+  (base6 "#302030")
+  (base7 "#211621")
+  (base8 "#030203")
   (black "#7a527a")
   (white "#211621")
   (purple1 "#a3598a")
@@ -265,7 +268,7 @@
 
  (custom-theme-set-variables 'camron
                              `(ansi-color-names-vector
-                               [,base6
+                               [,base7
                                 ,red2
                                 ,green1
                                 ,yellow1
